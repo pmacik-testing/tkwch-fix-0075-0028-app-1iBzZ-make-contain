@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-goem
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0028-tenant/tkwch-fix-0075-0028-app/devfile-sample-goem@sha256:867c240d7fd29f5c760fdd2860dbd185a3070131e94703cf2ad965eac45939f1
+        name: my-nodejs
+        resources: {}
+status: {}
